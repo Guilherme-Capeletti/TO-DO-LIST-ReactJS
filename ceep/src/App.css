@@ -1,0 +1,148 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  display: flex; 
+  justify-content: center;
+  margin-top: 110px;
+  background-image: url("imagens/pexels-veeterzy-114979.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+ }
+
+.tarefaForm { 
+  margin-bottom: 32px;
+}
+
+.titulo-principal { 
+  font-size: 50px;
+  color: white;
+}
+
+.tarefa-app { 
+  display: flex;
+  width: 520px;
+  height: 680px;
+  background: linear-gradient(
+    90deg,
+    rgb(100, 85, 199) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
+  text-align: center;
+  justify-content: center;
+}
+
+.icons{
+  color: white;
+}
+
+.adicionar-lista {
+  padding: 14px 32px 14px 16px;
+  border: 2px solid #5d0cff;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.adicionar-lista::placeholder {
+  color: white;
+}
+
+.adicionar-lista-button {
+  padding: 15px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+  border: 1px solid #5d0cff;
+}
+
+.adicionar-lista-button:hover {
+  background: thistle;
+}
+
+.editar-lista {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  padding: 14px 22px; 
+  border: 1px solid #5d0cff; 
+  color: white;
+}
+
+.editar-lista::placeholder{
+  color:white;
+}
+
+.editar-lista-button { 
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  padding: 14px 22px; 
+  border: 1px solid #5d0cff; 
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.editar-lista-button:hover {
+  background: thistle;
+}
+
+.tarefa-complete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+   90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+  .complete {
+  text-decoration: line-through; 
+  opacity: 0.4;
+}
+
+.reset-button{
+  padding: 8px;
+  cursor: pointer; 
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+  border: 1px solid #5d0cff;
+  border-radius: 10px;
+}
+
+.reset-button:hover{
+  background: thistle;
+}
+
+@media all and (max-width:540px){
+  .tarefa-app{
+    padding:10px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
